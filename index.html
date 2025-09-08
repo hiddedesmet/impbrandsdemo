@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blu 2.0 - Advanced Vaping Experience</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="assets/images/imp6.jpg" alt="blu" style="height: 32px;">
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#" class="nav-link">Vapes</a></li>
+                        <li><a href="#" class="nav-link">Pods</a></li>
+                        <li><a href="#" class="nav-link">Disposables</a></li>
+                        <li><a href="#" class="nav-link">Support</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <button class="search-btn">🔍</button>
+                    <button class="user-btn">👤</button>
+                    <button class="cart-btn">🛒 <span class="cart-count">0</span></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Free Delivery Notice -->
+    <div class="delivery-notice">
+        <div class="container">
+            <p>Free delivery with every subscription order.</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <div class="product-detail">
+                <!-- Product Images -->
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img id="mainProductImage" src="assets/images/imp1.png" alt="Blu 2.0 Device">
+                </div>
+            </div>                <!-- Product Info -->
+                <div class="product-info">
+                    <h1 class="product-title">NEW BLU 2.0</h1>
+                    <div class="product-reviews">
+                        <span class="stars">★★★★★</span>
+                        <a href="#reviews" class="review-link">Go to reviews</a>
+                    </div>
+                    
+                    <div class="product-price">
+                        <span class="price">£9.99</span>
+                    </div>
+
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label class="option-label">Quantity</label>
+                            <div class="quantity-control">
+                                <button class="qty-btn minus" onclick="changeQuantity(-1)">−</button>
+                                <input type="number" class="qty-input" value="1" min="1" id="quantity">
+                                <button class="qty-btn plus" onclick="changeQuantity(1)">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="add-to-cart-btn" onclick="addToCart()">ADD TO CART</button>
+
+                    <div class="product-description">
+                        <p class="description-main">The latest in vape technology for flexible control of your puffs, flavour intensity and battery life.</p>
+                        
+                        <p class="recommendation">We recommend pairing Flavour Max Pods, with our upgraded blu 2.0 device for optimal performance.</p>
+                        
+                        <div class="whats-included">
+                            <h4>Your new blu 2.0 device comes with:</h4>
+                            <ul>
+                                <li>Black 2.0 electronic vape device</li>
+                                <li>1 USB charger</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Product Guarantees -->
+                    <div class="product-guarantees">
+                        <div class="guarantee-item">
+                            <img src="https://images.ctfassets.net/r414rw797gvf/MTcyODk3OTMxMzEyNA/be07b4329847cd90325b08db01b7e5ad/30_DAY_MONEYBACK_GUARANTEE.png?q=75&w=128" alt="30 day guarantee">
+                            <span>30 day money back guarantee</span>
+                        </div>
+                        <div class="guarantee-item">
+                            <img src="https://images.ctfassets.net/r414rw797gvf/MTcyODk3OTMxMjY4Ng/8f35e3fc53576b7dcd31a46f568bacc0/clock.svg" alt="Same day shipping">
+                            <span>Order before 3 p.m. for same day shipping</span>
+                        </div>
+                        <div class="guarantee-item">
+                            <img src="https://images.ctfassets.net/r414rw797gvf/MTcyODk3OTMxMjY3MA/92558ffb7f8abda8940ef085153d0d27/truck.svg" alt="Free shipping">
+                            <span>Free shipping on orders over £25</span>
+                        </div>
+                        <div class="guarantee-item">
+                            <img src="https://images.ctfassets.net/r414rw797gvf/MTcyODk3OTMxMjY2Mw/3986b2416d8bc9d3bc52f95fb107f773/switch_horizontal.svg" alt="Free returns">
+                            <span>Free returns</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Features Section -->
+            <section class="product-features-section">
+                <h2 class="section-title">NEW BLU 2.0</h2>
+                <h3 class="section-subtitle">IMPROVED VERSATILE VAPING</h3>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <img src="https://images.ctfassets.net/r414rw797gvf/MTcyODk3OTMxNTc0Mg/ca971b148d7f1a40b60e9f6fb7c0cbc7/flex_icon.png?fm=avif&q=75&w=1280" alt="Flex flavours" class="feature-icon-img">
+                        <h4>FLEX YOUR FLAVOURS</h4>
+                        <p>Switch your flavour from max to mellow at the touch of a button.</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="https://images.ctfassets.net/r414rw797gvf/MTcyODk3OTMxNTc0OQ/acca0a67007254177d595bc45f5b0269/battery_saver_button_icon.png?fm=avif&q=75&w=1280" alt="Battery saver" class="feature-icon-img">
+                        <h4>BATTERY SAVER MODE</h4>
+                        <p>Conserve your battery life for those moments you need that extra boost.</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="https://images.ctfassets.net/r414rw797gvf/MTcyODk3OTMxNTc1NA/4ba29b9071a1948c21307594f333a81e/ICON-MOREPUFFS.png?fm=avif&q=75&w=1280" alt="More puffs" class="feature-icon-img">
+                        <h4>MORE PUFFS</h4>
+                        <p>Just tap the button for more puffs from the same amount of liquid.</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="https://images.ctfassets.net/r414rw797gvf/MTcyODk3OTMxNTc1MQ/f3ffeae58d19df9a42c0491eea5ef8a0/Fast_charge_Battery_icon.png?fm=avif&q=75&w=1280" alt="Fast charging" class="feature-icon-img">
+                        <h4>FASTER CHARGING</h4>
+                        <p>From 0 to 90% in just 35 minutes! Faster charging than ever before.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- New Flavours Section -->
+            <section class="capsules-section">
+                <h2 class="section-title">INTRODUCING OUR NEW FLAVOURS</h2>
+                <p class="section-subtitle">Now more bold, authentic flavours for blu 2.0.</p>
+                
+                <div class="capsules-grid">
+                    <div class="capsule-card">
+                        <img src="assets/images/imp4.avif" alt="Strawberry Ice Flavour Max">
+                        <h4>STRAWBERRY ICE FLAVOUR MAX</h4>
+                    </div>
+                    <div class="capsule-card">
+                        <img src="assets/images/imp5.avif" alt="New Flavour">
+                        <h4>KIWI PASSION FLAVOUR MAX</h4>
+                    </div>
+                </div>
+                
+                <button class="explore-btn">BROWSE PODS</button>
+            </section>
+
+            <!-- FAQ Section -->
+            <section class="faq-section">
+                <h2 class="section-title">BLU 2.0 DEVICE FAQS</h2>
+                
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            WHAT ARE THE IMPROVEMENTS TO THE NEW BLU 2.0?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>The new Blu 2.0 features flexible flavour intensity control, battery saver mode, faster charging (0-90% in 35 minutes), and improved safety features including a new safety lock.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            HOW DOES THE NEW BLU 2.0 DELIVER FLEXIBLE FLAVOUR INTENSITY?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Simply press the button on your device to switch between maximum flavour intensity and a more mellow experience, giving you complete control over your vaping experience.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            HOW DO I PUT THE NEW BLU 2.0 IN BATTERY SAVER MODE?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Press and hold the button for 3 seconds to activate battery saver mode. The LED will indicate when the mode is active, helping you conserve battery life.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            CAN I USE THE NEW FLAVOUR MAX PODS IN THE OLD BLU 2.0 DEVICE?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>While the new Flavour Max pods are compatible with the original Blu 2.0 device, we recommend using them with the new Blu 2.0 device for optimal performance and to access all new features.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>We are always available to help</h4>
+                    <p>📞 800 000 943 (Toll Free)</p>
+                    <p>Monday to Thursday<br>
+                    From 09:00 a.m. to 17:00 p.m.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>We are Free/Social Customers</h4>
+                    <p>Discover Blu 2.0<br>
+                    Disposables<br>
+                    Blu Bar Disposables Vapers<br>
+                    Order updates</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Others</h4>
+                    <p>Store Locator<br>
+                    PROMOTIONS</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Follow us on 📘</p>
+                <p>* Excluding weekends and holidays.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

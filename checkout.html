@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Blu</title>
+    <link rel="stylesheet" href="assets/css/checkout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-left">
+                <img src="assets/images/imp6.jpg" alt="Blu Logo" class="logo">
+            </div>
+            <nav class="header-nav">
+                <a href="#" class="nav-link">Rechargeable Vapes</a>
+                <a href="#" class="nav-link">Liquids and Pods</a>
+                <a href="#" class="nav-link">View All Products</a>
+                <a href="#" class="nav-link">Bundles</a>
+                <a href="#" class="nav-link">Subscription</a>
+                <a href="#" class="nav-link">Blog</a>
+            </nav>
+            <div class="header-right">
+                <button class="header-btn search-btn">🔍</button>
+                <button class="header-btn">✉️</button>
+                <button class="header-btn">👤</button>
+                <button class="header-btn cart-btn">
+                    🛒
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="cart-container">
+            <div class="cart-section">
+                <div class="cart-header">
+                    <button onclick="backToShopping()" class="back-btn">← Back to Shopping</button>
+                    <h1 class="cart-title">CART</h1>
+                </div>
+                <div class="cart-items" id="cartItems">
+                    <!-- Cart items will be populated here -->
+                </div>
+            </div>
+
+            <div class="purchase-section">
+                <div class="purchase-options">
+                    <h2>PURCHASE OPTIONS</h2>
+                    <div class="option-tabs">
+                        <button class="option-tab active" data-option="one-time">One-time</button>
+                    </div>
+                </div>
+
+                <div class="overview-section">
+                    <h3>OVERVIEW</h3>
+                    <div class="overview-row">
+                        <span>Amount</span>
+                        <span id="cartAmount">£0.00</span>
+                    </div>
+                    <div class="overview-row">
+                        <span>Shipping</span>
+                        <span id="shippingCost">Calculated in checkout</span>
+                    </div>
+                    <div class="overview-row total-row">
+                        <span>Total</span>
+                        <span id="cartTotal">£0.00</span>
+                    </div>
+
+                    <div class="free-delivery-notice">
+                        Free delivery for non-subscription orders over £25.00
+                    </div>
+
+                    <div class="coupon-section">
+                        <input type="text" placeholder="Coupon code" class="coupon-input">
+                        <button class="coupon-btn">ADD</button>
+                    </div>
+
+                    <button class="checkout-btn" id="checkoutBtn">
+                        CHECKOUT 🔒
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h4>We're always here to help</h4>
+                    <p>📞 08000009595 (free)</p>
+                    <p>Mon-Fri, 09:00 - 18:00</p>
+                    <p>✉️ support-uk@blu.com</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Vape Shops Nearby</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Returns and Refunds</a></li>
+                        <li><a href="#">Ordering/Shipping Information</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Disposal of blu Products</h4>
+                    <ul>
+                        <li><a href="#">Vapes & E-cigarettes</a></li>
+                        <li><a href="#">E-Liquid Flavours</a></li>
+                        <li><a href="#">Vape Scenes</a></li>
+                        <li><a href="#">30 Day Money Back Guarantee</a></li>
+                        <li><a href="#">Vape Subscription Terms and Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <span>Follow us on</span>
+                    <a href="#">📘</a>
+                    <a href="#">📷</a>
+                    <a href="#">🐦</a>
+                </div>
+                
+                <div class="footer-legal">
+                    <p>©2023 Fontem Ventures B.V. | Terms of use | Terms of sale | Privacy notice | Cookie Policy | Accessibility | Cookies Settings</p>
+                    <p>🇬🇧 United Kingdom</p>
+                </div>
+            </div>
+
+            <div class="age-notice">
+                <p>This product may be hazardous to health and is intended for use by adult smokers. Keep out of reach of children. blu products with nicotine, which is a highly addictive substance, are not recommended for use by: non-smokers or people who have stopped smoking; pregnant or breastfeeding women; or persons who are sensitive or allergic to nicotine, and should be used with caution by persons with or at a risk of an unstable heart condition or high blood pressure.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="assets/js/checkout.js"></script>
+</body>
+</html>
