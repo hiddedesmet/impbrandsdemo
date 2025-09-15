@@ -20,7 +20,7 @@ function loadCartItems() {
             <div class="empty-cart">
                 <h3>Your cart is empty</h3>
                 <p>Looks like you haven't added any items to your cart yet.</p>
-                <a href="index.html" class="continue-shopping-btn">Continue Shopping</a>
+                <a href="products.html" class="continue-shopping-btn">Continue Shopping</a>
             </div>
         `;
         return;
@@ -208,5 +208,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Back to shopping
 function backToShopping() {
-    window.location.href = 'index.html';
+    window.location.href = 'products.html';
 }
