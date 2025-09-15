@@ -1,3 +1,21 @@
+## Backlog Issue: Implement “View All Products” Page for Rechargeable Vapes
+
+### Description
+Create a “View All Products” page that displays all rechargeable vape products in a visually engaging, filterable, and shoppable grid, closely matching the user experience and features of https://www.blu.com/en-GB/all-rechargeables-vapes. See `view-all-products-prd.md` for full requirements.
+
+### Actions
+- Create a sample dataset for rechargeable vape products (with brand, flavor, price, nicotine strength, device type, image, etc.)
+- Implement a new HTML page (e.g., `all-products.html`) with a grid layout for products
+- Add filters for brand, flavor, price, nicotine strength, and device type (UI and logic)
+- Implement real-time filtering of the product grid
+- Add “Add to Cart” buttons for each product (functional, with simulated or real cart integration)
+- Style the page to closely match the blu.com reference (modern, professional, responsive)
+- Add a link or button from the main page to the new products page
+- Ensure accessibility and mobile responsiveness
+- Test all features and UI/UX
+
+### Reference
+- See `docs/view-all-products-prd.md` for user stories and acceptance criteria
 ## Vaper Webshop Backlog
 
 This backlog is derived from the Product Requirements Document (PRD) and is prioritized for MVP delivery.
