@@ -1,4 +1,6 @@
 # Copilot Project Instructions
+**MCP Server Usage Policy:**
+If an MCP server is available for a relevant task (e.g., code search, commit history, or repository operations), always attempt to use the MCP server option first before falling back to local or manual methods.
 
 Concise, project-specific guidance for AI coding agents working in this repository.
 
