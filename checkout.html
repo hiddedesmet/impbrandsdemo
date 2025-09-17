@@ -52,6 +52,19 @@
                     <h2>PURCHASE OPTIONS</h2>
                     <div class="option-tabs">
                         <button class="option-tab active" data-option="one-time">One-time</button>
+                        <button class="option-tab" data-option="subscription">Subscription</button>
+                    </div>
+                    <div class="subscription-note" id="subscriptionNote" style="display: none;">
+                        <p>💡 Subscription benefits: 10% off all orders & free delivery on all orders</p>
+                    </div>
+                    <div class="subscription-frequency" id="subscriptionFrequency" style="display: none;">
+                        <label>Delivery frequency:</label>
+                        <select id="frequencySelect" class="frequency-select">
+                            <option value="4">Every 4 weeks</option>
+                            <option value="6">Every 6 weeks</option>
+                            <option value="8">Every 8 weeks</option>
+                            <option value="12">Every 12 weeks</option>
+                        </select>
                     </div>
                 </div>
 
@@ -70,7 +83,7 @@
                         <span id="cartTotal">£0.00</span>
                     </div>
 
-                    <div class="free-delivery-notice">
+                    <div class="free-delivery-notice" id="deliveryNotice">
                         Free delivery for non-subscription orders over £25.00
                     </div>
 
