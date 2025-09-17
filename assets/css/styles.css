@@ -485,10 +485,14 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.5px;
     margin-top: 2rem;
+    display: inline-block;
+    text-decoration: none;
 }
 
 .explore-btn:hover {
     background: #0052a3;
+    color: white;
+    text-decoration: none;
 }
 
 /* FAQ Section */

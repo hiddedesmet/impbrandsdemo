@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Rechargeable Vapes - Blu</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/products.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/imp6.jpg" alt="blu" style="height: 32px;">
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="index.html" class="nav-link">Vapes</a></li>
+                        <li><a href="#" class="nav-link">Pods</a></li>
+                        <li><a href="#" class="nav-link">Disposables</a></li>
+                        <li><a href="#" class="nav-link">Support</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <button class="search-btn">🔍</button>
+                    <button class="user-btn">👤</button>
+                    <button class="cart-btn">🛒 <span class="cart-count">0</span></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Free Delivery Notice -->
+    <div class="delivery-notice">
+        <div class="container">
+            <p>Free delivery with every subscription order.</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Page Header -->
+            <div class="page-header">
+                <h1 class="page-title">All Rechargeable Vapes</h1>
+                <p class="page-subtitle">Discover our complete range of devices, pods, and kits for the ultimate vaping experience.</p>
+            </div>
+
+            <!-- Products Section -->
+            <div class="products-section">
+                <!-- Filters Sidebar -->
+                <aside class="filters-sidebar" id="filtersSidebar">
+                    <div class="filters-header">
+                        <h2>Filters</h2>
+                        <button class="filters-toggle" id="filtersToggle" aria-label="Toggle filters">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                    
+                    <div class="filters-content" id="filtersContent">
+                        <!-- Clear Filters -->
+                        <div class="filter-actions">
+                            <button class="clear-filters-btn" id="clearFilters">Clear All Filters</button>
+                        </div>
+
+                        <!-- Brand Filter -->
+                        <div class="filter-group">
+                            <h3 class="filter-title">Brand</h3>
+                            <div class="filter-options" id="brandFilters">
+                                <!-- Populated by JavaScript -->
+                            </div>
+                        </div>
+
+                        <!-- Device Type Filter -->
+                        <div class="filter-group">
+                            <h3 class="filter-title">Device Type</h3>
+                            <div class="filter-options" id="deviceTypeFilters">
+                                <!-- Populated by JavaScript -->
+                            </div>
+                        </div>
+
+                        <!-- Flavor Filter -->
+                        <div class="filter-group">
+                            <h3 class="filter-title">Flavor</h3>
+                            <div class="filter-options" id="flavorFilters">
+                                <!-- Populated by JavaScript -->
+                            </div>
+                        </div>
+
+                        <!-- Nicotine Strength Filter -->
+                        <div class="filter-group">
+                            <h3 class="filter-title">Nicotine Strength</h3>
+                            <div class="filter-options" id="nicotineFilters">
+                                <!-- Populated by JavaScript -->
+                            </div>
+                        </div>
+
+                        <!-- Price Filter -->
+                        <div class="filter-group">
+                            <h3 class="filter-title">Price Range</h3>
+                            <div class="filter-options" id="priceFilters">
+                                <!-- Populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Products Grid -->
+                <div class="products-main">
+                    <!-- Results Header -->
+                    <div class="results-header">
+                        <div class="results-info">
+                            <span class="results-count" id="resultsCount">0 products</span>
+                        </div>
+                        <button class="mobile-filters-btn" id="mobileFiltersBtn">
+                            🔽 Filters
+                        </button>
+                    </div>
+
+                    <!-- Products Grid -->
+                    <div class="products-grid" id="productsGrid">
+                        <!-- Products will be populated by JavaScript -->
+                    </div>
+
+                    <!-- Empty State -->
+                    <div class="empty-state" id="emptyState" style="display: none;">
+                        <div class="empty-state-content">
+                            <h3>No products match your filters</h3>
+                            <p>Try adjusting your filters or browse all products.</p>
+                            <button class="clear-filters-btn" onclick="clearAllFilters()">Clear All Filters</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>We are always available to help</h4>
+                    <p>📞 800 000 943 (Toll Free)</p>
+                    <p>Monday to Thursday<br>
+                    From 09:00 a.m. to 17:00 p.m.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>We are Free/Social Customers</h4>
+                    <p>Discover Blu 2.0<br>
+                    Disposables<br>
+                    Blu Bar Disposables Vapers<br>
+                    Order updates</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Others</h4>
+                    <p>Store Locator<br>
+                    PROMOTIONS</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Follow us on 📘</p>
+                <p>* Excluding weekends and holidays.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/products-page.js"></script>
+</body>
+</html>
